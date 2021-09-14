@@ -1,7 +1,8 @@
 {
   "scripts": {
-     "start": "webpack serve --mode development",
-     "typegen": "kea-typegen write ./src"
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack serve --mode development",
+    "typegen": "kea-typegen write ./src"
   },
   "name": "bookcrossing2",
   "version": "1.0.0",
@@ -29,11 +30,13 @@
     "webpack-dev-server": "^4.2.0"
   },
   "dependencies": {
+    "history": "^5.0.1",
     "kea": "^2.4.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hot-loader": "^4.13.0",
     "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
     "redux": "^4.1.1",
     "reselect": "^4.0.0"
   }
